@@ -6,3 +6,16 @@
 !/LICENSE
 !.gitignore
 !.gitkeep
+
+# zsh
+!.zshrc
+!.p10k.zsh
+!.zpreztorc
+
+# git
+!.gitconfig
+
+# deploy
+!deploy.sh
+
+
