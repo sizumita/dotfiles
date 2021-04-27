@@ -2,14 +2,15 @@
 
 export DOTPATH=${PREFIX:-"$HOME/dotfiles"}
 
-# install homebrew
-
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-# install git
-
-brew install git
-
+## install homebrew
+#
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#
+## install git
+#
+#brew install git
+#
+echo $DOTPATH
 if [ -d "$DOTPATH" ]; then
   cd "$DOTPATH" || exit 1
   git status >/dev/null 2>&1 || exit 1
@@ -19,4 +20,4 @@ else
   cd "$DOTPATH" || exit 1
 fi
 
-deploy/deploy.sh
+bash deploy/deploy.sh
