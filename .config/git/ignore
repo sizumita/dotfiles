@@ -1,0 +1,24 @@
+# MacOS
+
+.DS_Store
+
+# Python
+
+__pycache__/
+build/
+develop-eggs/
+dist/
+wheels/
+*.egg-info/
+
+# IntelliJ IDEA
+
+.idea/
+
+# python venv
+.venv
+venv/
+
+# dotenv
+
+.env
