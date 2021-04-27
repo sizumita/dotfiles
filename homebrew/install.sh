@@ -10,6 +10,7 @@ brew install \
   discord \
   chrome \
   numi \
+  pyenv
 
 brew upgrade
 
