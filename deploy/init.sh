@@ -4,11 +4,22 @@ export DOTPATH=${PREFIX:-"$HOME/dotfiles"}
 
 # install homebrew
 
-#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if ! (( $+commands[brew] )); then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+  echo "homebrew is available, update homebrew"
+  brew update
+fi
 
 # install git
 
-#brew install git
+if ! (( $+commands[git] )); then
+  brew install git
+else
+  echo "git is available"
+fi
+
+# clone dotfiles
 
 echo $DOTPATH
 if [ -d "$DOTPATH" ]; then
@@ -20,4 +31,4 @@ else
   cd "$DOTPATH" || exit 1
 fi
 
-bash deploy/deploy.sh
+zsh deploy/deploy.sh
