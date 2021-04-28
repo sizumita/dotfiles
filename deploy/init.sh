@@ -2,14 +2,14 @@
 
 export DOTPATH=${PREFIX:-"$HOME/dotfiles"}
 
-## install homebrew
-#
+# install homebrew
+
 #/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-#
-## install git
-#
+
+# install git
+
 #brew install git
-#
+
 echo $DOTPATH
 if [ -d "$DOTPATH" ]; then
   cd "$DOTPATH" || exit 1

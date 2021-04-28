@@ -2,14 +2,19 @@
 
 bash homebrew/install.sh
 
+# setup zsh
+
+cp -f zsh/.zsh.d zsh/.zshenv $HOME
+
 # install zprezto
 
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zsh.d/.zprezto"
 
-# update zpreztorc
+zsh
 
-cp -f .zpreztorc $HOME/.zprezto/runcoms/zpreztorc
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
 
-# add .p10k.zsh
-
-cp -f .p10k.zsh $HOME/.p10k.zsh
+zsh
