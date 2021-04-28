@@ -12,4 +12,4 @@ fi
 
 # Customize to your needs...
 
-[[ ! -f ~/.p10k.zsh ]] || source ${ZDOTDIR}/.p10k.zsh
+[[ ! -f ${ZDOTDIR}/.p10k.zsh ]] || source ${ZDOTDIR}/.p10k.zsh
