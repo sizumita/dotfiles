@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 export DOTPATH=${PREFIX:-"$HOME/dotfiles"}
 
