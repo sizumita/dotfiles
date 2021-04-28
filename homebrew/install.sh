@@ -8,10 +8,7 @@ brew install \
   jetbrains-toolbox \
   pyenv \
   discord \
-  chrome \
-  numi \
-  pyenv
+  google-chrome \
+  numi
 
 brew upgrade
-
-brew doctor
