@@ -31,4 +31,4 @@ else
   cd "$DOTPATH" || exit 1
 fi
 
-zsh deploy/deploy.sh
+zsh deploy/deploy.zsh
