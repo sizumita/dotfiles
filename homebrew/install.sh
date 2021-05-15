@@ -14,6 +14,7 @@ brew install \
   gitkraken \
   moom \
   kindle \
-  zoom
+  zoom \
+  openssl
 
 brew upgrade

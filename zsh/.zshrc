@@ -13,3 +13,5 @@ fi
 # Customize to your needs...
 
 [[ ! -f ${ZDOTDIR}/.p10k.zsh ]] || source ${ZDOTDIR}/.p10k.zsh
+
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
