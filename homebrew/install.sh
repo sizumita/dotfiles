@@ -8,6 +8,12 @@ brew install \
   jetbrains-toolbox \
   discord \
   google-chrome \
-  numi
+  numi \
+  deepl \
+  messenger \
+  gitkraken \
+  moom \
+  kindle \
+  zoom
 
 brew upgrade
