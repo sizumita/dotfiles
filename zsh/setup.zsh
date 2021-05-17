@@ -22,3 +22,4 @@ cp -f zsh/.p10k.zsh ${ZDOTDIR}
 
 cp -f zsh/.zpreztorc "${ZDOTDIR}/.zprezto/runcoms/zpreztorc"
 cp -f zsh/.zshrc "${ZDOTDIR}/.zprezto/runcoms/zshrc"
+cp -f zsh/.zprofile "${ZDOTDIR}/.zprezto/runcoms/zprofile"
